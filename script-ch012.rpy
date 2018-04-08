@@ -50,11 +50,11 @@ label ch12_main:
         m "You read the manga and wrote a poem, didn't you?"
         mc "I did...?"
         "The events of last night do seem a little confusing."
-        if ch11_read_manga or ch11_did_all_tasks:
+        if ch11_read_manga:
             "I remember choosing to read the manga..."
             "But when did I write a poem?"
             "I have memories of doing both but I can't piece out what goes when."
-        else:
+        else: # wrote poem
             "I remember choosing to write a poem and skimming over the book this morning..."
             "But I have memories of doing both last night..."
             "My head must be all over the place if I can't even piece out what goes when."
